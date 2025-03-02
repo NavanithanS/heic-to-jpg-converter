@@ -7,24 +7,24 @@ A simple, efficient Node.js utility for converting HEIC/HEIF image files to JPEG
 
 ## Features
 
-- Convert single HEIC files to JPG
-- Batch convert entire directories of HEIC files
-- Maintain image quality with adjustable compression settings
-- Simple command-line interface
-- Lightweight with minimal dependencies
+-   Convert single HEIC files to JPG
+-   Batch convert entire directories of HEIC files
+-   Maintain image quality with adjustable compression settings
+-   Simple command-line interface
+-   Lightweight with minimal dependencies
 
 ## Installation
 
 ### Prerequisites
 
-- Node.js (v14 or newer)
-- npm (comes with Node.js)
+-   Node.js (v14 or newer)
+-   npm (comes with Node.js)
 
 ### Setup
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/heic-to-jpg-converter.git
+git clone https://github.com/NavanithanS/heic-to-jpg-converter.git
 cd heic-to-jpg-converter
 
 # Install dependencies
@@ -63,32 +63,36 @@ node heic-to-jpg-converter.js --dir ~/Pictures/iPhone ~/Pictures/Converted
 You can also use the converter in your own Node.js scripts:
 
 ```javascript
-const converter = require('./heic-to-jpg-converter');
+const converter = require("./heic-to-jpg-converter");
 
 // Convert a single file
-converter.convertHeicToJpg('input.heic', 'output.jpg')
-  .then(outputPath => console.log(`File converted successfully: ${outputPath}`))
-  .catch(err => console.error(`Error: ${err.message}`));
+converter
+    .convertHeicToJpg("input.heic", "output.jpg")
+    .then((outputPath) =>
+        console.log(`File converted successfully: ${outputPath}`)
+    )
+    .catch((err) => console.error(`Error: ${err.message}`));
 
 // Convert a directory
-converter.convertAllHeicInDirectory('/path/to/heic/files', '/path/to/output')
-  .then(() => console.log('All files converted successfully'))
-  .catch(err => console.error(`Error: ${err.message}`));
+converter
+    .convertAllHeicInDirectory("/path/to/heic/files", "/path/to/output")
+    .then(() => console.log("All files converted successfully"))
+    .catch((err) => console.error(`Error: ${err.message}`));
 ```
 
 ## Why Use This Tool?
 
 HEIC (High Efficiency Image File Format) is used by default on newer iPhones and other devices but isn't universally supported. This tool helps you convert these files to the widely-compatible JPG format while:
 
-- Preserving image quality
-- Batch processing multiple files
-- Avoiding the need for online converters that might compromise privacy
-- Working on all major operating systems (Windows, macOS, Linux)
+-   Preserving image quality
+-   Batch processing multiple files
+-   Avoiding the need for online converters that might compromise privacy
+-   Working on all major operating systems (Windows, macOS, Linux)
 
 ## Performance
 
-- Single conversion: ~1-2 seconds per image
-- Batch conversion: Processes files in parallel for maximum efficiency
+-   Single conversion: ~1-2 seconds per image
+-   Batch conversion: Processes files in parallel for maximum efficiency
 
 ## Contributing
 
@@ -106,4 +110,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- [heic-convert](https://github.com/catdad-experiments/heic-convert) - The underlying library used for conversion
+-   [heic-convert](https://github.com/catdad-experiments/heic-convert) - The underlying library used for conversion
