@@ -1,6 +1,6 @@
 {
   "name": "heic-to-jpg-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple utility to convert HEIC images to JPG format",
   "main": "heic-to-jpg-converter.js",
   "scripts": {
@@ -19,9 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "heic-convert": "^1.2.4",
-    "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "heic-convert": "^1.2.4"
   },
   "engines": {
     "node": ">=14.0.0"
