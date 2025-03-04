@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/heic-to-jpg-converter.git"
+    "url": "git+https://github.com/NavanithanS/heic-to-jpg-converter.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/heic-to-jpg-converter/issues"
+    "url": "https://github.com/NavanithanS/heic-to-jpg-converter/issues"
   },
-  "homepage": "https://github.com/your-username/heic-to-jpg-converter#readme"
+  "homepage": "https://github.com/NavanithanS/heic-to-jpg-converter#readme"
 }
